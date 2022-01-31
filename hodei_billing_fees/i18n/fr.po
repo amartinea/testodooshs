@@ -1,0 +1,261 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hodei_billing_fees
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-25 10:12+0000\n"
+"PO-Revision-Date: 2022-01-25 10:12+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__account_id
+msgid "Account"
+msgstr "Compte"
+
+#. module: hodei_billing_fees
+#: model_terms:ir.actions.act_window,help:hodei_billing_fees.action_billing_fee
+msgid "Add a Billing Fee"
+msgstr "Ajouter des Frais de facturation"
+
+#. module: hodei_billing_fees
+#: model_terms:ir.ui.view,arch_db:hodei_billing_fees.view_billing_fee_form
+msgid "Add a billing condition"
+msgstr "Ajouter une condition de frais"
+
+#. module: hodei_billing_fees
+#: code:addons/hodei_billing_fees/models/account_invoice.py:202
+#, python-format
+msgid "Advance: %s"
+msgstr ""
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_account_invoice__apply_fee
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_sale_order__apply_fee
+msgid "Apply Fee"
+msgstr "Appliquer les frais de facturation"
+
+#. module: hodei_billing_fees
+#: selection:billing.fee.lines,condition:0
+msgid "Between"
+msgstr "Entre"
+
+#. module: hodei_billing_fees
+#: selection:billing.fee.lines,condition:0
+msgid "Bigger or egal"
+msgstr "Plus grand ou égal"
+
+#. module: hodei_billing_fees
+#: model:ir.actions.act_window,name:hodei_billing_fees.action_billing_fee
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_account_invoice__fee_price
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__fee_id
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_res_partner__fee_id
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_res_users__fee_id
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_sale_order__fee_price
+#: model_terms:ir.ui.view,arch_db:hodei_billing_fees.view_billing_fee_form
+#: model_terms:ir.ui.view,arch_db:hodei_billing_fees.view_billing_fee_tree
+#: model:product.product,name:hodei_billing_fees.product_fees
+#: model:product.template,name:hodei_billing_fees.product_fees_product_template
+msgid "Billing Fee"
+msgstr "Frais de Facturation"
+
+#. module: hodei_billing_fees
+#: model_terms:ir.ui.view,arch_db:hodei_billing_fees.view_billing_fee_form
+msgid "Billing Fee Lines"
+msgstr "Lignes de frais de facturation"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__fee_lines
+msgid "Billing Fee lines"
+msgstr "Lignes de frais de facturation"
+
+#. module: hodei_billing_fees
+#: model:ir.ui.menu,name:hodei_billing_fees.account_management_fees_menu
+msgid "Billing Fees"
+msgstr "Frais de Facturation"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__condition
+msgid "Condition"
+msgstr ""
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__create_uid
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__create_date
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__display_name
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__value_apply
+msgid "Fee Value"
+msgstr "Valeur de frais"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_product_product__fee_product
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_product_template__fee_product
+msgid "Fee product"
+msgstr "Produit de frais de facturation"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__id
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__id
+msgid "ID"
+msgstr ""
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_account_invoice
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Ligne de facture"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee____last_update
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__write_uid
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__write_date
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_product_product
+msgid "Product"
+msgstr "Article"
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_product_template
+msgid "Product Template"
+msgstr "Modèle d'article"
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_sale_order
+msgid "Sale Order"
+msgstr "Commandes"
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Facture de paiement d'avance"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__sequence
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: hodei_billing_fees
+#: selection:billing.fee.lines,condition:0
+msgid "Smaller or egal"
+msgstr "Plus petit ou égal"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee__tax_id
+msgid "Tax apply to fee"
+msgstr "Taxe appliqué sur les frais"
+
+#. module: hodei_billing_fees
+#: code:addons/hodei_billing_fees/models/account_invoice.py:191
+#, python-format
+msgid "The product used to invoice a down payment should be of type 'Service'. Please use another product or update this product."
+msgstr "Le produit utilisé pour facturer une avance doit être de type 'service'. Veuillez utiliser un autre produit pour modifier ce produit."
+
+#. module: hodei_billing_fees
+#: code:addons/hodei_billing_fees/models/account_invoice.py:189
+#, python-format
+msgid "The product used to invoice a down payment should have an invoice policy set to \"Ordered quantities\". Please update your deposit product to be able to create a deposit invoice."
+msgstr "Le produit utilisé pour facturer un acompte doit avoir une police de facture configurée sous \"Quantités commandées\". Veuillez mettre à jour votre produit de dépôt pour pouvoir créer une facture d'acompte."
+
+
+#. module: hodei_billing_fees
+#: model:product.product,uom_name:hodei_billing_fees.product_fees
+#: model:product.template,uom_name:hodei_billing_fees.product_fees_product_template
+msgid "Unit(s)"
+msgstr "Unité(s)"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,help:hodei_billing_fees.field_billing_fee__sequence
+msgid "Used to order billing fee"
+msgstr "Utilisé pour classer les frais de facturation"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,help:hodei_billing_fees.field_billing_fee_lines__sequence
+msgid "Used to order billing fee lines"
+msgstr "Utilisé pour classer les lignes de frais de facturation"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__value_condition1
+msgid "Value 1"
+msgstr "Valeur 1"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__value_condition2
+msgid "Value 2"
+msgstr "Valeur 2"
+
+#. module: hodei_billing_fees
+#: model:ir.model.fields,field_description:hodei_billing_fees.field_billing_fee_lines__value_type
+msgid "Value Type"
+msgstr "Type de valeur"
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_billing_fee
+msgid "billing.fee"
+msgstr ""
+
+#. module: hodei_billing_fees
+#: model:ir.model,name:hodei_billing_fees.model_billing_fee_lines
+msgid "billing.fee.lines"
+msgstr ""
+
+#. module: hodei_billing_fees
+#: selection:billing.fee.lines,value_type:0
+msgid "fix"
+msgstr "fixe"
+
+#. module: hodei_billing_fees
+#: model:product.product,weight_uom_name:hodei_billing_fees.product_fees
+#: model:product.template,weight_uom_name:hodei_billing_fees.product_fees_product_template
+msgid "kg"
+msgstr ""

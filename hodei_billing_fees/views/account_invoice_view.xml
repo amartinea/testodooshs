@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_invoice_fee_form" model="ir.ui.view">
+            <field name="name">account.invoice.fee.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="sale.account_invoice_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='team_id']" position="after">
+                        <field name="apply_fee"/>
+                    </xpath>
+                    <xpath expr="//field[@name='amount_untaxed']" position="before">
+                        <field name="fee_price" class="oe_subtotal_footer_separator"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

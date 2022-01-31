@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="product_fees" model="product.product">
+            <field name="name">Billing Fee</field>
+            <field name="type">service</field>
+        </record>
+    </data>
+</odoo>

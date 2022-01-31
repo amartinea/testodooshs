@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_billing_fee_tree" model="ir.ui.view">
+            <field name="name">billing.fee.tree</field>
+            <field name="model">billing.fee</field>
+            <field name="arch" type="xml">
+                <tree string="Billing Fee">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="tax_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_billing_fee_form" model="ir.ui.view">
+            <field name="name">billing.fee.form</field>
+            <field name="model">billing.fee</field>
+            <field name="arch" type="xml">
+                <form string="Billing Fee">
+                    <sheet>
+                        <!--<div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" type="object" name="toggle_active" icon="fa-archive">
+                                <field name="active" widget="boolean_button"
+                                options='{"terminology": "archive"}'/>
+                            </button>
+                        </div>-->
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="tax_id"/>
+                                <field name="account_id"/>
+                            </group>
+                        </group>
+                        <field name="fee_lines" widget="section_and_note_one2many" mode="tree">
+                            <form>
+                                <field name="value_condition1"/>
+                                <field name="condition"/>
+                                <field name="value_condition2" attrs="{'readonly': [('condition', '!=', 'bet')]}"/>
+                                <field name="value_apply"/>
+                                <field name="value_type"/>
+                            </form>
+                            <tree string="Billing Fee Lines" editable="bottom">
+                                <control>
+                                    <create string="Add a billing condition"/>
+                                </control>
+                                <field name="sequence" widget="handle"/>
+                                <field name="value_condition1"/>
+                                <field name="condition"/>
+                                <field name="value_condition2" attrs="{'readonly': [('condition', '!=', 'bet')]}"/>
+                                <field name="value_apply"/>
+                                <field name="value_type"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_billing_fee" model="ir.actions.act_window">
+            <field name="name">Billing Fee</field>
+            <field name="res_model">billing.fee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context"></field>
+            <field name="domain">[]</field>
+            <field name="view_id" ref="view_billing_fee_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Add a Billing Fee
+                </p><p>
+                </p>
+            </field>
+        </record>
+        <menuitem id="account_management_fees_menu" name="Billing Fees" parent="account.account_management_menu" sequence="2" groups="account.group_account_manager" action="action_billing_fee"/>
+    </data>
+</odoo>
